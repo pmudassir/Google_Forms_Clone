@@ -2,17 +2,15 @@ import React from 'react'
 import './header.css'
 import formImage from '../../images/forms.png'
 import { Avatar, IconButton } from '@mui/material'
-import MenuIcon from '@mui/icons-material/Menu';
 import SearchIcon from '@mui/icons-material/Search';
 import AppsIcon from '@mui/icons-material/Apps';
+import Sidebar from '../Sidebar/Sidebar';
 
 const Header = () => {
     return (
         <div className='header'>
             <div className="header_info">
-                <IconButton>
-                    <MenuIcon />
-                </IconButton>
+                <Sidebar />
                 <img src={formImage} style={{ height: '40px', width: '40px' }} className="form_image" alt="forms logo" />
                 <div className="info">Forms</div>
             </div>
