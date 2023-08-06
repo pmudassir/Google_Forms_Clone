@@ -1,0 +1,65 @@
+.template_section{
+    background-color: #f4f4f4;
+    padding-top: 7px;
+    padding-bottom: 40px;
+}
+
+.template_top{
+    margin-left: 180px;
+    margin-right: 180px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.template_left span{
+    font-size: 16px;
+    color: #202124;
+    font-family: 'Google Sans',Roboto,Arial,sans-serif;
+}
+
+.template_right{
+    display: flex;
+}
+
+.gallery_button{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+}
+
+.template_body{
+    margin-left: 160px;
+    margin-right: 160px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.card{
+    margin-left: 20px;
+    margin-top: 15px;
+}
+
+.card_img{
+    box-sizing: border-box;
+    height: 120px;
+    width: 150px;
+    cursor: pointer;
+    border-radius: 2px;
+    border: 0.2px solid #fffdf7 ;
+}
+
+.card img:hover{
+    border: 1px solid #6e2594 ;
+}
+
+.card_title{
+    font-size: 14px;
+    margin-top: 2px;
+    color: #202124;
+    font-weight: 500;
+    font-family: 'Google Sans',Roboto,Arial,sans-serif;
+}
