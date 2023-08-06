@@ -1,0 +1,28 @@
+.list_style{
+    margin-left: 8px;
+    margin-right: 8px;
+    margin-top: 15px;
+}
+
+.list_item{
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.list_item:hover{
+    background-color: #f4f4f9;
+    border-radius: 0 20px 20px 0;
+}
+
+.icon_style{
+    height: 20px;
+    width: 20px;
+}
+
+.icon_names{
+    margin-left: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    color: black;
+    font-family: 'Product Sans',Arial, sans-serif;
+}
