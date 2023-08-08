@@ -6,7 +6,7 @@ import { Avatar, Button, IconButton } from '@mui/material'
 import { ColorLensOutlined, MoreVert } from '@mui/icons-material'
 import { AiOutlineEye } from 'react-icons/ai'
 
-const Form = () => {
+const FormHeader = () => {
     return (
         <div className="form_header">
             <div className="form_header_left">
@@ -38,4 +38,4 @@ const Form = () => {
     )
 }
 
-export default Form
+export default FormHeader
