@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Form from "./components/Form/Form";
+import Form from "./components/FormHeader/FormHeader";
 import Home from "./components/Home/Home";
 
 function App() {

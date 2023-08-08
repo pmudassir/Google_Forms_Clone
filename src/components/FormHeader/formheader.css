@@ -2,17 +2,15 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin: 5px 15px;
+    background-color: #fff;
+    height: 50px;
 }
 
 .form_header_left{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-}
-
-.form_image{
-    height: 45px;
-    width: 40px;
 }
 
 .form_name{
@@ -27,7 +25,22 @@
     width: 120px;
 }
 
+.form_name:focus{
+    border-bottom: 1px solid #000;
+}
+
+.form_header_icon{
+    color: #202124;
+    font-size: 20px;
+}
+
 .form_header_span{
     font-size: 12px;
     font-weight: 600;
+}
+
+.form_header_right{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
