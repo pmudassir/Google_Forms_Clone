@@ -2,7 +2,6 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Form from "./pages/Form/Form";
 import Home from "./pages/Home/Home";
 
-
 function App() {
   return (
     <div>
