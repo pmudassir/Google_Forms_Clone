@@ -1,5 +1,5 @@
 import { AddCircleOutline, CheckBox, Close, CropOriginal, FilterNone, MoreVert, OndemandVideo, Radio, ShortText, Subject, TextFields } from '@mui/icons-material'
-import { Accordion, AccordionDetails, AccordionSummary, Button, FormControlLabel, MenuItem, Select, Switch, Typography } from '@mui/material'
+import { Accordion, AccordionDetails, AccordionSummary, Button, FormControlLabel, IconButton, MenuItem, Select, Switch, Typography } from '@mui/material'
 import React, { useState } from 'react'
 import { BsFileText, BsTrash } from 'react-icons/bs'
 import { FcRightUp } from 'react-icons/fc'
@@ -78,8 +78,32 @@ const FormQuestions = () => {
                       ? <input type={question.questionType} style={{ marginRight: "10px" }} />
                       : <ShortText style={{ marginRight: "10px" }} />
                   }
+                  <div>
+                    <input type="text" className='text_input' placeholder='options' value={question.options[index].optionText} />
+                  </div>
+                  <CropOriginal style={{ color: "#5f6368" }} />
+                  <IconButton aria-label='delete'>
+                    <Close />
+                  </IconButton>
                 </div>
               ))}
+              <div className="add_footer">
+                <div className="add_question_bottom_left">
+                  <Button size='small' style={{ textTransform: 'none', color: '#4285f4', fontSize: '13px', fontWeight: '600' }}>
+                    <FcRightUp style={{ border: '2px solid #4285f4', padding: '2px', marginRight: '8px' }} /> Answer Key
+                  </Button>
+                </div>
+                <div className="add_question_bottom">
+                  <IconButton aria-label='Copy'>
+                    <FilterNone />
+                  </IconButton>
+                  <IconButton aria-label='delete'>
+                    <BsTrash />
+                  </IconButton>
+                  <span style={{ color: '#5f6368', fontSize: '13px' }}>Required</span>
+                  <Switch />
+                </div>
+              </div>
             </AccordionDetails>
           </div>
         </Accordion>
